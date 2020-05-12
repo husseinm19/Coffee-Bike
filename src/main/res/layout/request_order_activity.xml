@@ -1,0 +1,289 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layoutDirection="ltr"
+    android:background="#fff"
+    android:orientation="vertical"
+    tools:context=".Activities.RequestOrderActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:padding="18dp">
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:orientation="vertical"
+            android:layout_height="250dp">
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:id="@+id/header_image"
+                android:layout_height="250dp"
+                android:layout_margin="10dp"
+                android:scaleType="fitXY"
+                tools:src="@drawable/cappuccino" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <TextView
+                    android:id="@+id/txt_name_coffee"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentBottom="true"
+                    android:layout_margin="22dp"
+                    android:background="#fff"
+                    android:gravity="center"
+                    android:text=" Turkish Coffee "
+                    android:textAllCaps="true"
+                    android:textColor="#d67601"
+                    android:textSize="15sp" />
+
+            </RelativeLayout>
+        </androidx.cardview.widget.CardView>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:paddingLeft="16dp"
+            android:paddingTop="16dp"
+            android:paddingRight="16dp"
+            android:paddingBottom="16dp"
+            tools:context=".MainActivity">
+
+            <TextView
+                android:id="@+id/textViewdesc"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="16dp"
+                android:background="#fff"
+                android:gravity="center"
+                tools:text="Coffee Bike Shop App is a place that you  can order your coffee online \n\nCoffee Bike Shop App is a place that you can order your coffee online \n"
+                android:textAllCaps="true"
+                android:textColor="#d67601"
+                android:textSize="15sp"
+                android:lineSpacingExtra="10dp"
+                android:textStyle="bold" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/textView1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="16dp"
+                    android:background="#fff"
+                    android:gravity="center"
+                    android:text="Quantity"
+                    android:textAllCaps="true"
+                    android:textColor="#d67601"
+                    android:textSize="18sp"
+                    android:textStyle="bold" />
+
+
+
+
+                <Button
+                    android:id="@+id/buttonPlus"
+                    android:layout_width="48dp"
+                    android:layout_height="48dp"
+                    android:layout_alignParentRight="true"
+                    android:background="@drawable/ic_plus" />
+
+                <TextView
+                    android:id="@+id/quantextView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:layout_toLeftOf="@+id/buttonPlus"
+                    android:paddingLeft="8dp"
+                    android:paddingRight="8dp"
+                    android:text="1"
+                    android:textAllCaps="true"
+                    android:textColor="@android:color/black"
+                    android:textSize="25dp"
+                    android:textStyle="bold" />
+
+                <Button
+                    android:id="@+id/buttonMinse"
+                    android:layout_width="48dp"
+                    android:layout_height="48dp"
+                    android:layout_toLeftOf="@+id/quantextView"
+                    android:background="@drawable/ic_minse" />
+
+            </RelativeLayout>
+
+            <androidx.legacy.widget.Space
+                android:layout_width="match_parent"
+                android:layout_height="15dp"/>
+
+
+            <TextView
+                android:id="@+id/textViewTopic"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="#fff"
+                android:gravity="center"
+                android:text="Toppings"
+                android:textAllCaps="true"
+                android:textColor="#d67601"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="15dp">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+
+                    android:orientation="horizontal">
+
+                    <CheckBox
+                        android:id="@+id/Whipped_Creem"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+
+                    <TextView
+                        android:id="@+id/Whipped_Cream_Text"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:background="#fff"
+                        android:gravity="center"
+                        android:text="Whipped Cream"
+                        android:textAllCaps="true"
+                        android:textColor="#d67601"
+                        android:textSize="15sp"
+                        android:textStyle="bold" />
+
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:orientation="horizontal">
+
+                    <CheckBox
+                        android:id="@+id/Chocloate"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+
+                    <TextView
+                        android:id="@+id/Chocloate_Text"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:background="#fff"
+                        android:gravity="center"
+                        android:text="Chocolate"
+                        android:textAllCaps="true"
+                        android:textColor="#d67601"
+                        android:textSize="15sp"
+                        android:textStyle="bold" />
+
+
+                </LinearLayout>
+            </RelativeLayout>
+
+
+        </LinearLayout>
+
+        <androidx.legacy.widget.Space
+            android:layout_width="match_parent"
+            android:layout_height="5dp"/>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/Price_Text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+
+                android:background="#fff"
+                android:gravity="center"
+                android:text="Total  : "
+                android:textAllCaps="true"
+                android:textColor="#d67601"
+                android:textSize="25sp"
+                android:textStyle="bold" />
+        </RelativeLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_margin="10dp"
+            android:background="@android:color/darker_gray" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/Price_Text_Viewww"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:background="#fff"
+                android:gravity="center"
+                android:text=" EGP "
+                android:textAllCaps="true"
+                android:textColor="#d67601"
+                android:textSize="25sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/Price_Text_View"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toLeftOf="@+id/Price_Text_Viewww"
+                android:text="0"
+                android:textAllCaps="true"
+                android:textColor="@android:color/black"
+                android:textSize="25dp"
+                android:textStyle="bold" />
+        </RelativeLayout>
+
+<!--        <androidx.legacy.widget.Space-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="50dp"/>-->
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <Button
+                android:id="@+id/button_order"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_margin="22dp"
+                android:background="#d67601"
+                android:text="Order Now"
+                android:textAllCaps="true"
+                android:textColor="#fff"
+                android:textSize="18sp" />
+        </RelativeLayout>
+
+
+    </LinearLayout>
+
+
+</ScrollView>

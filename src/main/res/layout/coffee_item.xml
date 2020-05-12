@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+
+    tools:context=".Activities.MainActivity">
+
+    <LinearLayout
+        android:paddingLeft="16dp"
+        android:paddingTop="16dp"
+        android:paddingRight="16dp"
+        android:paddingBottom="16dp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+
+        <TextView
+            android:id="@+id/textView1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="16dp"
+            android:text="Qaunity"
+            android:textAllCaps="true"
+            android:textStyle="bold" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+
+            <Button
+                android:id="@+id/buttonMinse"
+                android:layout_width="48dp"
+                android:layout_height="48dp"
+                android:layout_marginTop="16dp"
+                android:onClick="decrement"
+                android:text="-" />
+
+            <TextView
+                android:id="@+id/textView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingLeft="8dp"
+                android:paddingRight="8dp"
+                android:text="0"
+                android:textAllCaps="true"
+                android:textColor="@android:color/black"
+                android:textSize="16dp"
+                android:textStyle="bold" />
+
+            <Button
+                android:id="@+id/buttonPlus"
+                android:layout_width="48dp"
+                android:layout_height="48dp"
+                android:layout_marginTop="16dp"
+                android:onClick="increment"
+                android:text="+" />
+
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/Price_Text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="16dp"
+            android:text="Price"
+            android:textAllCaps="true"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/Price_Text_View"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="5 EGP"
+            android:textAllCaps="true"
+            android:textColor="@android:color/black"
+            android:textSize="16dp"
+            android:textStyle="bold" />
+
+        <Button
+            android:id="@+id/button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:onClick="SubmitOrder"
+            android:text="Order" />
+
+
+        <Button
+            android:id="@+id/button_sign_in"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="22dp"
+            android:background="#d67601"
+            android:onClick="logout"
+            android:text="Logout"
+            android:textAllCaps="false"
+            android:textColor="#fff"
+            android:textSize="18sp" />
+
+
+    </LinearLayout>
+
+
+
+
+</RelativeLayout>

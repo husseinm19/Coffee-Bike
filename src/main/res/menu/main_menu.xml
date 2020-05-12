@@ -1,0 +1,21 @@
+<!-- bottom_menu.xml -->
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item
+        android:id="@+id/home"
+        android:icon="@drawable/ic_home"
+        android:title="Home" />
+    <item
+        android:id="@+id/orders"
+        android:icon="@drawable/ic_orders"
+        android:title="My Orders" />
+    <item
+        android:id="@+id/account"
+        android:icon="@drawable/ic_user"
+        android:title="My Account" />
+    <item
+        android:id="@+id/about"
+        android:icon="@drawable/ic_about"
+        android:title="About" />
+</menu>
+

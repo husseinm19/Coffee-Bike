@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">Coffee-Bike</string>
+    <string name="title_home">Home</string>
+    <string name="title_dashboard">Dashboard</string>
+    <string name="title_notifications">Notifications</string>
+
+
+    <string name="about">Coffee Bike Shop App is a place that you can order your coffee online and it will be at your doorstep in just 10 minutes. thats easy order now and enjoy you coffee.</string>
+
+
+</resources>
